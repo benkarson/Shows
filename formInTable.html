@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form in Table</title>
+	<style type="text/css">
+		body{
+			background: url("TvShows/img/city1.jpg");
+			background-size: cover;
+		}
+		form {
+			width : 700px;
+			padding : 20px;
+			margin: 0 auto;
+			border: 2px solid blue;
+			background: url("TvShows/img/moritz.jpg");
+			background-size: cover;
+			color: red;
+		}
+
+		input[type='text'], input[type='password'], select {
+			width: 200px;
+			padding: 5px 3px;
+			border: none;
+			background-color: silver;
+			font-weight: bold;
+			outline: none;
+			border-radius: 6px;
+		}
+
+		textarea {
+			resize: none;
+			outline: none;
+			background-color: silver;
+			font-weight: bold;
+			border-radius: 6px;
+		}
+		textarea:focus {
+			background-color: yellow;
+			border: 2px solid blue;
+		}
+
+		input[type='submit'] {
+			background-color: khaki;
+			color: 000;
+			font-weight: bold;
+			width: 200px;
+		}
+
+		input[type='submit']:hover {
+			font-size: 1.1em;
+			/*border-style: groove solid;*/
+			border: 2px solid blue;
+			border-radius: 8px;
+		}
+
+		input[type='text']:hover, input[type='password']:hover, select:hover{
+			border: 2px solid blue;
+		} 
+
+		input[type='text']:focus, input[type='password']:focus, select:focus{
+			background-color: yellow;
+		} 
+
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<table>
+				<legend>HTML Form in table</legend>
+				<tr>
+					<td><label for="user">User Name:</label></td>
+					<td><input type="text" name="user" id="user"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Password :</label></td>
+					<td><input type="password" name="pass" id="pass"></td>
+				</tr>
+				<tr>
+					<td><label>Gender:</label></td>
+					<td>
+						Male:<input type="radio" name="gender" value="male"><br>
+						Female:<input type="radio" name="gender" value="female"><br>
+						Other:<input type="radio" name="gender" value="other"><br><br>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Skills:</label></td>
+					<td>
+						HTML <input type="checkbox" name="HTML"> <br>
+						CSS <input type="checkbox" name="CSS"> <br>
+						PHP <input type="checkbox" name="PHP"> <br>
+						Java <input type="checkbox" name="Java"> <br><br>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="county">Select your county:</label></td>
+					<td>
+						<select id="county">
+							<option value="">Select your county</option>
+							<option value="Nairobi">Nairobi</option>
+							<option value="Kisumu">Kisumu</option>
+							<option value="Mombasa">Mombasa</option>
+							<option value="Narok">Narok</option>
+							<option value="Machakos">Machakos</option>
+							<option value="Garissa">Garissa</option>
+							<option value="Kajiado">Kajiado</option>
+							<option value="Bomet">Bomet</option>
+							<option value="Busia">Busia</option>
+							<option value="Mandera">Mandera</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="comments">Comments:</label></td>
+					<td><textarea id="comments" rows="10" cols="50"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit form"></td>
+				</tr>
+			</table>
+		</fieldset>	
+	</form>
+</body>
+</html>

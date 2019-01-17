@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML forms</title>
+	<style type="text/css">
+		body{
+			background: url("TvShows/img/tom.jpg");
+			background-size: cover;
+			color: green;
+		}
+		fieldset {
+			border: 2px solid red;
+			padding: 20px;
+			background: url("TvShows/img/wong.jpg");
+			background-size: contain;
+			margin: 30px;
+		}
+
+		legend {
+			color: red;
+			font-size: 2em;
+		}
+
+		label {
+			color: blue;
+			font-size: 1.3em;
+			font-weight: bolder;
+		}
+		input {
+			text-align: center;
+			color: black;	
+			background: silver;
+		}
+
+		input:hover{
+			font-weight: bold;
+		}
+
+		textarea {
+			font-family: Heltevica;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>HTML forms</h1>
+	<form action="" method="">
+		<fieldset>
+			<!-- gives a surrounding around a form -->
+			<legend>Fill in the form:</legend>
+			<label>User name: 
+				<input type="text" name="user" placeholder="Fill in your User name">
+			</label>
+			<br><br>
+			<label>Password:
+				<input type="password" name="pass" placeholder="Enter Password">
+			</label>
+			<br><br>
+			<label>Gender:
+				Male: <input type="radio" name="gender" value="male">
+				Female: <input type="radio" name="gender" value="female">
+				Other: <input type="radio" name="gender" value="other">
+			</label>
+			<br><br>
+			<label>Skills:
+				HTML: <input type="checkbox" name="html">
+				PHP: <input type="checkbox" name="php">
+				Java Script: <input type="checkbox" name="java script">
+				Android: <input type="checkbox" name="android">
+			</label>
+			<br><br>
+			<label>Select your county:
+				<select name="counties">
+					<option value="">Select your county</option>
+					<option value="Kisumu">Kisumu</option>
+					<option value="Mombasa">Mombasa</option>
+					<option value="Nairobi">Nairobi</option>
+					<option value="Machakos">Machakos</option>
+					<option value="Busia">Busia</option>
+				</select>
+			</label>
+			<br><br>
+			<label>Comments:
+				<textarea name="comments" rows="10" cols="30"></textarea>
+			</label>
+			<!-- button type="submit">Submit Data</button> -->
+			<input type="submit" name="submit" value="Register">
+		</fieldset>
+	</form>
+</body>
+</html>
